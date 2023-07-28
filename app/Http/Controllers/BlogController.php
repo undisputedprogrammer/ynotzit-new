@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Ynotz\SmartPages\Http\Controllers\SmartController;
 
 class BlogController extends SmartController
@@ -15,7 +16,9 @@ class BlogController extends SmartController
     }
 
     public function upload(Request $request){
-
+        if (! Gate::allows('is-employee')) {
+            abort(403);
+        }
         return $this->buildResponse('blog.upload');
     }
 
@@ -86,6 +89,9 @@ class BlogController extends SmartController
     }
 
     public function delete(Request $request){
+        if (! Gate::allows('is-employee')) {
+            abort(403);
+        }
         $blog=Blog::find($request->id);
         $blog->delete();
         return response()->json(array('success'=>true,'message'=>'Blog deleted successfully'));
@@ -98,7 +104,9 @@ class BlogController extends SmartController
     }
 
     public function update(Request $request){
-
+        if (! Gate::allows('is-employee')) {
+            abort(403);
+        }
         $request->validate([
             'title'=>['required','min:25','max:180'],
             'description'=>['required', 'min:40'],
