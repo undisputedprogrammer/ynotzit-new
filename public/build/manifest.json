@@ -1,0 +1,32 @@
+{
+  "public/fonts/Inter-Bold.otf": {
+    "file": "assets/Inter-Bold-1e9dfd6a.otf",
+    "src": "public/fonts/Inter-Bold.otf"
+  },
+  "public/fonts/Inter-Light.otf": {
+    "file": "assets/Inter-Light-e66f130f.otf",
+    "src": "public/fonts/Inter-Light.otf"
+  },
+  "public/fonts/Inter-Medium.otf": {
+    "file": "assets/Inter-Medium-99dab2bd.otf",
+    "src": "public/fonts/Inter-Medium.otf"
+  },
+  "public/fonts/Inter-Regular.otf": {
+    "file": "assets/Inter-Regular-a7e791e8.otf",
+    "src": "public/fonts/Inter-Regular.otf"
+  },
+  "public/fonts/Inter-SemiBold.otf": {
+    "file": "assets/Inter-SemiBold-8c1990b6.otf",
+    "src": "public/fonts/Inter-SemiBold.otf"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-0fbd1a3e.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-2c88efca.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
