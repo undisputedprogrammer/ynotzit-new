@@ -1,0 +1,152 @@
+@font-face {
+    font-family:"montserrat-bold";
+
+    src: url("../fonts/Inter-Bold.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-light";
+
+    src: url("../fonts/Inter-Light.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-medium";
+
+    src: url("../fonts/Inter-Medium.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-regular";
+
+    src: url("../fonts/Inter-Regular.otf") format("truetype");
+  }
+
+
+ h1 {
+    font-family: 'montserrat-bold';
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+
+    }
+
+    p{
+        font-family: 'montserrat-light';
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-family:'montserrat-medium' ;
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 26px;
+        padding-left: 25px;
+
+    }
+
+
+    li{
+        margin-top: 26px;
+    }
+
+    li>h2{
+        margin-top: 0px;
+        display: inline;
+    }
+
+    p2{
+        display: block;
+        font-family: 'montserrat-light';
+        font-size: 13px;
+        margin-top: 7px;
+        line-height: 18px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul{
+        list-style-position: inside;
+        list-style-type: disc;
+        font-family: 'montserrat-light';
+        font-size: 14px;
+        line-height: 20px;
+     }
+     ol{
+        list-style-position: inside;
+        list-style-type: number;
+        font-family: 'montserrat-light';
+        font-size: 14px;
+        line-height: 20px;
+     }
+
+     span{
+        font-family: 'montserrat-regular';
+     }
+
+    @media(min-width:1024px){
+        h1{
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        h2{
+            font-family:'montserrat-medium' ;
+            font-size: 20px;
+            line-height: 27px;
+            margin-top: 26px;
+            padding-left: 25px;
+
+        }
+
+        p{
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        p2{
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        ul,ol{
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+
+
+    @media (min-width: 1536px) {
+        h1{
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        h2{
+            font-family:'montserrat-medium' ;
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 26px;
+            padding-left: 25px;
+
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        p2{
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        ul,ol{
+            font-size: 19px;
+            line-height: 27px;
+        }
+    }
