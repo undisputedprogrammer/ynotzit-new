@@ -32,33 +32,43 @@
 
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon-7.webp')}}" alt="">
-                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black  xl:text-lg">Web Development</h1>
-                <p class=" font-inter_light text-xs 2xl:text-sm text-center text-black ">Help you to have a strong digital presense by building great looking practical websites</p>
+                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black  xl:text-lg">Web Applications Development</h1>
+                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Upgrade your business with a software solution. Have better management control.
+                </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon-8.webp')}}" alt="">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Mobile Application Development</h1>
-                <p class=" font-inter_light text-xs 2xl:text-sm text-center text-black ">Gain more control over your business, minimise errors and losses, increase efficiency and profitability of our web based software solutions</p>
+                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Where ever you are, Have vital information about your on your fingertips. Let your customers have easy access to your services.
+                </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 9.webp')}}" alt=" digital marketing">
-                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Digital Marketing</h1>
-                <p class=" font-inter_light text-xs 2xl:text-sm text-center text-black ">Help you to have a strong digital presense by building great looking practical websites</p>
+                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Custom Business Solutions:
+                </h1>
+                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Your business is unique. You need tailor made solutions that will cater to your specific business requirements.
+                </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 10.webp')}}" alt="">
-                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Search Engine Optimization (SEO)</h1>
-                <p class=" font-inter_light text-xs 2xl:text-sm text-center text-black ">Help you to have a strong digital presense by building great looking practical websites</p>
+                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Outsourced Development
+                </h1>
+                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">It is smarter to focus on one's own core competency, and let the expert of the technical job. Let us provide you the development support in software development, while you manage your clients.
+                </p>
+
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 11.webp')}}" alt="">
-                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Social Media Management</h1>
-                <p class=" font-inter_light text-xs 2xl:text-sm text-center text-black ">Help you to have a strong digital presense by building great looking practical websites</p>
+                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Websites & Digital Marketing
+                </h1>
+                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Build a distinctive online presence. Let your target audience find you online. Always think ahead. There is no point in waiting; the right time is now.
+                </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 12.webp')}}" alt="">
-                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Graphics/Videos</h1>
-                <p class=" font-inter_light text-xs 2xl:text-sm text-center text-black ">Help you to have a strong digital presense by building great looking practical websites</p>
+                <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Graphics & Video Creatives
+                </h1>
+                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Create an appealing identity for your business. Mark yourself different from the crowd. Strike a chord with your target audience with your logo and marketing communications.</p>
             </div>
 
         </div>

@@ -39,7 +39,7 @@
             </div>
 
             <img class="absolute w-32 sm:w-36 md:w-44 lg:w-48 xl:w-52 right-[calc(50%+30px)] sm:right-[calc(50%+36px)] 2xl:right-[calc(50%+46px)] bottom-[75%] sm:bottom-[72%]" src="{{asset('images/home/first-dialogue.png')}}" alt="Dudu speaking">
-            <img class="absolute w-32 sm:w-36 md:w-44 lg:w-48 xl:w-52 left-[calc(50%+28px)] sm:left-[calc(50%+36px)] 2xl:left-[calc(50%+42px)] xl:bottom-[43%] bottom-[52%]" src="{{asset('images/home/dialog 2.webp')}}" alt="Dudu speaking">
+            <img class="absolute w-28 sm:w-32 md:w-[8.2rem] lg:w-36 xl:w-[9.3rem] 2xl:w-40 left-[calc(50%+28px)] sm:left-[calc(50%+36px)] 2xl:left-[calc(50%+42px)] xl:bottom-[43%] bottom-[52%]" src="{{asset('images/home/dialogue-1.png')}}" alt="Dudu speaking">
         </div>
 
     </div>

@@ -26,15 +26,15 @@
         </h1>
         <div class=" w-fit  lg:w-full  mx-auto my-8 flex flex-col space-y-3 items-start">
             <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
-                <p class=" text-xs xl:text-sm text-black font-inter_regular w-full lg:w-1/2">- We listen to your needs</p>
-                <p class=" text-xs xl:text-sm text-black font-inter_regular w-full lg:w-1/2">- Honest technical guidance</p>
+                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- We listen to your needs</p>
+                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Honest technical guidance</p>
             </div>
             <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
-                <p class=" text-xs xl:text-sm text-black font-inter_regular w-full lg:w-1/2">- Clear communication</p>
-                <p class=" text-xs xl:text-sm text-black font-inter_regular w-full lg:w-1/2">- Optimum solutions</p>
+                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Clear communication</p>
+                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Optimum solutions</p>
             </div>
             <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
-                <p class=" text-xs xl:text-sm text-black font-inter_regular w-full">- Reliability</p>
+                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full">- Reliability</p>
                 {{-- <p class=" text-xs text-black font-inter_regular">- Honest technical guidance</p> --}}
             </div>
 
