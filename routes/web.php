@@ -8,6 +8,7 @@ use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MarketerController;
 use App\Http\Controllers\AdministrationController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/blogs',[PageController::class, 'blogs'])->name('blogs');
 Route::get('/contact',[PageController::class, 'contact'])->name('contact');
+Route::post('/connect',[MailController::class, 'connect'])->name('connect');
 
 Route::get('/offers/super-startup-offer' , [PageController::class, 'offer'])->name('super-startup-offer');
 

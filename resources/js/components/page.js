@@ -191,10 +191,12 @@ export default () => ({
                     if(r.data.success != undefined && r.data.success===false){
 
                         this.$dispatch('actionresponse', {target: detail.target, content: r.data});
+                        this.ajaxLoading = false;
                     }
                     else if(r.data.success != undefined && r.data.success===true){
 
                         this.$dispatch('actionresponse', {target: detail.target, content: r.data});
+                        this.ajaxLoading = false;
                     }
                     else{
 

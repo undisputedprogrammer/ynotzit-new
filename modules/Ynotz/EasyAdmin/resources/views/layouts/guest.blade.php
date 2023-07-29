@@ -61,6 +61,10 @@ currentroute=$event.detail.currentroute;"
                 </div>
             </main>
         </div>
+        {{-- <div x-show="ajaxLoading" class="h-full w-full absolute top-0 left-0 z-50 bg-base-300 opacity-30 flex flex-row justify-center items-center">
+            <img src="/images/loading.gif" class="h-10 w-10 opacity-100 z-[60] bg-transparent" alt="">
+        </div> --}}
+        <x-display.loading></x-display.loader>
         <x-easyadmin::display.notice />
         <x-easyadmin::display.toast />
         @stack('js')

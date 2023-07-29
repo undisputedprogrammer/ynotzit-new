@@ -42,7 +42,33 @@
         <h1 class=" font-inter_bold text-2xl z-20  sm:text-3xl lg:text-4xl 2xl:text-5xl ">Get in touch with us</h1>
 
         {{-- contact form --}}
-        <form action="" class="w-full bg-white px-4 py-6 my-5 border border-black rounded-2xl flex flex-col space-y-3 shadow-lg shadow-gray-200 transition duration-200 hover:scale-[100.3%] hover:shadow-gray-400">
+        <form
+        x-data="{ doSubmit() {
+            let form = document.getElementById('contact-form');
+            let formdata = new FormData(form);
+            $dispatch('formsubmit',{url:'{{route('connect')}}', route: 'connect',fragment: 'page-content', formData: formdata, target: 'contact-form'});
+
+        }}"
+         id="contact-form" action="" @submit.prevent.stop="doSubmit()" method="POST" class="w-full bg-white px-4 py-6 my-5 border border-black rounded-2xl flex flex-col space-y-3 shadow-lg shadow-gray-200 transition duration-200 hover:scale-[100.3%] hover:shadow-gray-400"
+
+         @formresponse.window="
+            console.log('inside form response');
+            if ($event.detail.target == $el.id) {
+            console.log('response for form submission');
+            console.log($event.detail.content);
+
+            if ($event.detail.content.success) {
+                $dispatch('shownotice', {message: $event.detail.content.message, mode: 'success', redirectUrl: '{{route('contact')}}', redirectRoute: 'contact'});
+                $dispatch('formerrors', {errors: []});
+            } else if (typeof $event.detail.content.errors != undefined) {
+                $dispatch('shownotice', {message: $event.detail.content.message, mode: 'error', redirectUrl: null, redirectRoute: null});
+
+            } else{
+                $dispatch('formerrors', {errors: $event.detail.content.errors});
+            }
+        }">
+
+        @csrf
 
             {{-- name --}}
             <div class="relative">
@@ -85,7 +111,7 @@
 
             {{-- requirements --}}
             <div class=" border border-black rounded-2xl px-2 py-1">
-                <textarea id="req" name="mesage" rows="4" class="w-full px-0   border-0  focus:ring-0  font-inter_regular" placeholder="Tell us about your requirements..." required></textarea>
+                <textarea id="req" name="message" rows="4" class="w-full px-0   border-0  focus:ring-0  font-inter_regular" placeholder="Tell us about your requirements..." required></textarea>
             </div>
 
 

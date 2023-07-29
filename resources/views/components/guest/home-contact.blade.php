@@ -24,7 +24,7 @@
         <div class="flex flex-col items-center relative mt-[4.5rem] sm:mt-20 md:mt-[6.5rem] xl:mt-[6.5rem] ">
             <img class="w-36  sm:w-40 md:w-44 lg:w-48 xl:w-48 absolute bottom-[58%] left-[58%] xs:left-[56%] sm:left-[55%] lg:left-[56%]" src="{{asset('images/home/home-contact-dialog-3.png')}}" alt="dudu speaking">
             <img class="w-16 2xl:w-20 translate-y-[6px] -rotate-[3deg]" src="{{asset('images/home/dudu-6.png')}}" alt="">
-            <button @click.prevent.stop="$dispatch('linkaction',{link:'{{route('contact')}}', route: 'contact', fragment: 'page-content'})" class=" text-base 2xl:text-lg uppercase font-inter_semibold px-3.5 2xl:px-5 py-2 2xl:py-3.5 rounded-full shadow-md shadow-sky-100 ease-in-out transition duration-300 hover:shadow-lg hover:bg-[#0f63a3] border-2 border-[#1976bc] bg-[#1976bc] text-white ">Get in touch with us</button>
+            <button @click.prevent.stop="$dispatch('linkaction',{link:'{{route('contact')}}', route: 'contact', fragment: 'page-content'});" class=" text-base 2xl:text-lg uppercase font-inter_semibold px-3.5 2xl:px-5 py-2 2xl:py-3.5 rounded-full shadow-md shadow-sky-100 ease-in-out transition duration-300 hover:shadow-lg hover:bg-[#0f63a3] border-2 border-[#1976bc] bg-[#1976bc] text-white ">Get in touch with us</button>
         </div>
     </div>
 
