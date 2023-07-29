@@ -14,9 +14,9 @@
                 <img class=" w-20 sm:w-24 xl:w-28 2xl:w-32 -translate-x-0" src="{{asset('images/home/dudu-3.png')}}" alt="Our dearest Dudu">
             </div>
 
-            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 right-[calc(50%+32px)] xl:right-[calc(50%+37px)] 2xl:right-[calc(50%+47px)] bottom-[75%]" src="{{asset('images/home/dialog 4.webp')}}" alt="Dudu speaking">
+            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 right-[calc(50%+32px)] xl:right-[calc(50%+37px)] 2xl:right-[calc(50%+47px)] bottom-[75%]" src="{{asset('images/home/home-service-dialog-1.png')}}" alt="Dudu speaking">
 
-            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 left-[calc(55%+7px)] sm:left-[calc(54%+7px)] lg:left-[calc(53%+7px)] xl:left-[calc(50%+37px)] 2xl:left-[calc(50%+47px)] bottom-[45%]" src="{{asset('images/home/dialog 5.webp')}}" alt="Dudu speaking">
+            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 left-[calc(55%+7px)] sm:left-[calc(54%+7px)] lg:left-[calc(53%+7px)] xl:left-[calc(50%+37px)] 2xl:left-[calc(50%+47px)] bottom-[45%]" src="{{asset('images/home/home-service-dialog-2.png')}}" alt="Dudu speaking">
 
         </div>
 
@@ -33,27 +33,27 @@
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon-7.webp')}}" alt="">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black  xl:text-lg">Web Applications Development</h1>
-                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Upgrade your business with a software solution. Have better management control.
+                <p class=" font-inter_light text-xs sm:text-[13px] md:text-sm sm:leading-4 2xl:text-base 2xl:leading-6 text-center text-black ">Upgrade your business with a software solution. Have better management control.
                 </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon-8.webp')}}" alt="">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Mobile Application Development</h1>
-                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Where ever you are, Have vital information about your on your fingertips. Let your customers have easy access to your services.
+                <p class=" font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base 2xl:leading-6 text-center text-black ">Where ever you are, Have vital information about your on your fingertips. Let your customers have easy access to your services.
                 </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 9.webp')}}" alt=" digital marketing">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Custom Business Solutions:
                 </h1>
-                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Your business is unique. You need tailor made solutions that will cater to your specific business requirements.
+                <p class=" font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base 2xl:leading-6 text-center text-black ">Your business is unique. You need tailor made solutions that will cater to your specific business requirements.
                 </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 10.webp')}}" alt="">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Outsourced Development
                 </h1>
-                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">It is smarter to focus on one's own core competency, and let the expert of the technical job. Let us provide you the development support in software development, while you manage your clients.
+                <p class=" font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base 2xl:leading-6 text-center text-black ">It is smarter to focus on one's own core competency, and let the expert of the technical job. Let us provide you the development support in software development, while you manage your clients.
                 </p>
 
             </div>
@@ -61,14 +61,14 @@
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 11.webp')}}" alt="">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Websites & Digital Marketing
                 </h1>
-                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Build a distinctive online presence. Let your target audience find you online. Always think ahead. There is no point in waiting; the right time is now.
+                <p class=" font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base 2xl:leading-6 text-center text-black ">Build a distinctive online presence. Let your target audience find you online. Always think ahead. There is no point in waiting; the right time is now.
                 </p>
             </div>
             <div class="mt-9 lg:mt-11 xl:mt-14 w-[70%] sm:w-[40%] lg:w-[30%] xl:w-[26%] flex flex-col justify-start">
                 <img class="w-16 md:w-20 xl:w-24 2xl:w-28 mx-auto" src="{{asset('images/home/Icon 12.webp')}}" alt="">
                 <h1 class=" font-inter_medium my-2 lg:my-3 2xl:my-4 text-center text-black xl:text-lg">Graphics & Video Creatives
                 </h1>
-                <p class=" font-inter_light text-xs 2xl:text-[15px] 2xl:leading-6 text-center text-black ">Create an appealing identity for your business. Mark yourself different from the crowd. Strike a chord with your target audience with your logo and marketing communications.</p>
+                <p class=" font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base 2xl:leading-6 text-center text-black ">Create an appealing identity for your business. Mark yourself different from the crowd. Strike a chord with your target audience with your logo and marketing communications.</p>
             </div>
 
         </div>

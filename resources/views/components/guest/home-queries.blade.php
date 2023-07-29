@@ -34,30 +34,30 @@
     <div class="flex lg:order-2 flex-wrap w-[90%] sm:w-[80%] md:w-[90%] lg:w-[70%] 2xl:w-[50%] mx-auto justify-evenly mt-6  text-black">
         <div class="w-[45%] md:w-[28%] flex flex-col items-center space-y-3 mt-7 md:mt-10 lg:mt-14 2xl:mt-20">
             <img class=" w-16 2xl:w-20" src="{{asset('images/home/Icon 1.webp')}}" alt="">
-            <p class=" font-inter_light text-[10px] leading-3 text-center sm:text-xs xl:text-sm 2xl:text-[15px]  sm:w-[80%] md:w-full">Getting started with business, want a digital presence?</p>
+            <p class=" text-center font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base  sm:w-[80%] md:w-full">Getting started with business, want a digital presence?</p>
         </div>
         <div class="w-[45%] md:w-[28%] flex flex-col items-center space-y-3 mt-7 md:mt-10 lg:mt-14 2xl:mt-20">
             <img class=" w-16 2xl:w-20" src="{{asset('images/home/Icon 2.webp')}}" alt="">
-            <p class=" font-inter_light text-[10px] leading-3 text-center sm:text-xs xl:text-sm 2xl:text-[15px]  sm:w-[80%] md:w-full">Need a software solution or mobile app to manage your business?
+            <p class=" text-center font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base  sm:w-[80%] md:w-full">Need a software solution or mobile app to manage your business?
             </p>
         </div>
         <div class="w-[45%] md:w-[28%] flex flex-col items-center space-y-3 mt-7 md:mt-10 lg:mt-14 2xl:mt-20">
             <img class=" w-16 2xl:w-20" src="{{asset('images/home/Icon 3.webp')}}" alt="">
-            <p class=" font-inter_light text-[10px] leading-3 text-center sm:text-xs xl:text-sm 2xl:text-[15px]  sm:w-[80%] md:w-full">With to provide a mobile app to your customers to make it easier them to access your services?
+            <p class=" text-center font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base  sm:w-[80%] md:w-full">With to provide a mobile app to your customers to make it easier them to access your services?
             </p>
         </div>
         <div class="w-[45%] md:w-[28%] flex flex-col items-center space-y-3 mt-7 md:mt-14 2xl:mt-20">
             <img class=" w-16 2xl:w-20" src="{{asset('images/home/Icon 4.webp')}}" alt="">
-            <p class=" font-inter_light text-[10px] leading-3 text-center sm:text-xs xl:text-sm 2xl:text-[15px]  sm:w-[80%] md:w-full">Looking for a reliable development partner who can support you in your software projects?</p>
+            <p class=" text-center font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base  sm:w-[80%] md:w-full">Looking for a reliable development partner who can support you in your software projects?</p>
         </div>
         <div class="w-[45%] md:w-[28%] flex flex-col items-center space-y-3 mt-7 md:mt-14 2xl:mt-20">
             <img class=" w-16 2xl:w-20" src="{{asset('images/home/Icon 5.webp')}}" alt="">
-            <p class=" font-inter_light text-[10px] leading-3 text-center sm:text-xs xl:text-sm 2xl:text-[15px]  sm:w-[80%] md:w-full">Getting started with business, wish to build a prominent online presence?
+            <p class=" text-center font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base  sm:w-[80%] md:w-full">Getting started with business, wish to build a prominent online presence?
             </p>
         </div>
         <div class="w-[45%] md:w-[28%] flex flex-col items-center space-y-3 mt-7 md:mt-14 2xl:mt-20">
             <img class=" w-16 2xl:w-20" src="{{asset('images/home/Icon 6.webp')}}" alt="">
-            <p class=" font-inter_light text-[10px] leading-3 text-center sm:text-xs xl:text-sm 2xl:text-[15px]  sm:w-[80%] md:w-full">Want to design or re-design your brand identity and communication strategy?</p>
+            <p class=" text-center font-inter_light text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base  sm:w-[80%] md:w-full">Want to design or re-design your brand identity and communication strategy?</p>
         </div>
     </div>
 

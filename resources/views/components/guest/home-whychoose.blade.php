@@ -14,7 +14,7 @@
                 <img class=" w-16 sm:w-20 xl:w-24 2xl:w-28 translate-x-24 md:translate-x-5" src="{{asset('images/home/dudu-4.png')}}" alt="Our dearest Dudu">
             </div>
 
-            <img class="absolute w-48 sm:w-48 lg:w-52 xl:w-56 right-[calc(33%+0px)] xs:right-[38%] sm:right-[40%] md:right-[60%] lg:right-[58%] xl:right-[56%] 2xl:right-[60%] bottom-[75%]" src="{{asset('images/home/dialog 6.webp')}}" alt="Dudu speaking">
+            <img class="absolute w-40 sm:w-44 lg:w-48 xl:w-52 right-[calc(33%+0px)] xs:right-[38%] sm:right-[40%] md:right-[60%] lg:right-[58%] xl:right-[56%] 2xl:right-[60%] bottom-[75%]" src="{{asset('images/home/home-whychooseus-dialog.png')}}" alt="Dudu speaking">
 
         </div>
 
@@ -26,15 +26,15 @@
         </h1>
         <div class=" w-fit  lg:w-full  mx-auto my-8 flex flex-col space-y-3 items-start">
             <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
-                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- We listen to your needs</p>
-                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Honest technical guidance</p>
+                <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- We listen to your needs</p>
+                <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Honest technical guidance</p>
             </div>
             <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
-                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Clear communication</p>
-                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Optimum solutions</p>
+                <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Clear communication</p>
+                <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Optimum solutions</p>
             </div>
             <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
-                <p class=" text-xs xl:text-sm 2xl:text-base text-black font-inter_regular w-full">- Reliability</p>
+                <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full">- Reliability</p>
                 {{-- <p class=" text-xs text-black font-inter_regular">- Honest technical guidance</p> --}}
             </div>
 

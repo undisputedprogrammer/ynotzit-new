@@ -4,7 +4,7 @@
 
 <div class=" w-[90%] 2xl:w-[84%] mx-auto my-[3rem] flex flex-col space-y-6 sm:flex-row sm:justify-evenly sm:flex-wrap sm:space-y-0 ">
 
-    @if ($blogs != null)
+    @if (count($blogs)>0)
 
     @foreach ($blogs as $blog)
     <div @click.prevent.stop="$dispatch('linkaction',{link:'{{route('view-blog')}}', route:'view-blog', fragment: 'page-content', params:{title:'{{$blog['slug']}}'}})"  class=" w-full border border-black flex flex-col space-y-3 lg:space-y-5 pb-3 lg:pb-5 rounded-sm sm:w-[45%] md:w-[40%] lg:w-[30%] xl:w-[29%] sm:mb-6 h-fit shadow-md shadow-gray-300 hover:shadow-lg transition duration-200 hover:scale-[100.2%]">
