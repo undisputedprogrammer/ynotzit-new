@@ -9,10 +9,10 @@
     <div class=" order-2 lg:w-[26%] lg:hidden xl:w-[23%] 2xl:w-[30%] 2xl:mr-16 xl:translate-y-5 transition ease-in-out">
         <div class=" relative mt-[7rem] lg:mt-[1rem] xl:mt-0 mr-16">
             <div class=" w-fit mx-auto ">
-                <img class=" w-16 sm:w-20  lg:w-24 xl:w-28 2xl:w-28 translate-x-0 sm:translate-x-0" src="{{asset('images/home/dudu-5.png')}}" alt="Our dearest Dudu">
+                <img class=" w-16 sm:w-20  lg:w-24 xl:w-28 2xl:w-28 translate-x-0 sm:translate-x-0" src="{{asset('images/home/dudu-5-copy.webp')}}" alt="Our dearest Dudu">
             </div>
 
-            <img class="absolute w-28 sm:w-32 lg:w-40 xl:w-48 left-[calc(54%+20px)] xl:right-[calc(50%+30px)] 2xl:right-[calc(50%+40px)] bottom-[75%]" src="{{asset('images/home/dialo1.png')}}" alt="Dudu speaking">
+            <img class="absolute w-28 sm:w-32 lg:w-40 xl:w-48 left-[calc(54%+20px)] xl:right-[calc(50%+30px)] 2xl:right-[calc(50%+40px)] bottom-[75%]" src="{{asset('images/home/third-dialogue.webp')}}" alt="Dudu speaking">
 
         </div>
 
@@ -22,10 +22,10 @@
     <div class=" order-1 lg:w-[23%] hidden lg:block xl:w-[23%] 2xl:w-[30%] 2xl:mr-16 xl:translate-y-5 transition ease-in-out">
         <div class=" relative mt-[7rem] lg:mt-[1rem] xl:mt-0 ml-16">
             <div class=" w-fit 2xl:mx-auto ">
-                <img class=" w-16 sm:w-20  lg:w-24 xl:w-28 2xl:w-28 translate-x-3 sm:translate-x-5 lg:translate-x-0" src="{{asset('images/home/dudu-5.png')}}" alt="Our dearest Dudu">
+                <img class=" w-16 sm:w-20  lg:w-24 xl:w-28 2xl:w-28 translate-x-3 sm:translate-x-5 lg:translate-x-0" src="{{asset('images/home/dudu-5-copy.webp')}}" alt="Our dearest Dudu">
             </div>
 
-            <img class="absolute w-36 sm:w-40 lg:w-36 xl:w-[9.2rem] left-[calc(50%+20px)] lg:left-[calc(50%+10px)] xl:right-[calc(50%+30px)] 2xl:left-[calc(57%+40px)] bottom-[75%]" src="{{asset('images/home/dialo1.png')}}" alt="Dudu speaking">
+            <img class="absolute w-36 sm:w-40 lg:w-36 xl:w-[9.2rem] left-[calc(50%+20px)] lg:left-[calc(50%+10px)] xl:right-[calc(50%+30px)] 2xl:left-[calc(57%+40px)] bottom-[75%]" src="{{asset('images/home/third-dialogue.webp')}}" alt="Dudu speaking">
 
         </div>
 

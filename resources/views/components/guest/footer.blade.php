@@ -1,5 +1,5 @@
 <div class="bg-black w-full mt-4 overflow-hidden">
-    <div class=" lg:pt-16 md:pt-10 pt-5 w-[80%] sm:w-[75%] md:w-[75%] xl:w-[84%] 2xl:w-[80%] mx-auto">
+    <div class=" lg:pt-16 md:pt-10 pt-5 w-[92%] sm:w-[75%] md:w-[75%] xl:w-[84%] 2xl:w-[80%] mx-auto">
         <h1 class="text-white lg:text-xl xl:text-2xl md:text-lg font-inter_bold text-sm">Quick links</h1>
       <div class="mb-7 md:mb-14 mt-4">
       <div class="text-white flex     pt-2 md:pt-8 lg:pt-12 justify-between    text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base font-inter_regular ">

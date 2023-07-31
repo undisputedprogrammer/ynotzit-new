@@ -21,7 +21,7 @@
     </div>
 
 
-    <div x-cloak x-transition x-show="open" class="h-fit flex flex-col justify-between bg-white absolute top-[75px] left-0  w-full md:hidden px-4 z-30">
+    <div x-cloak x-transition x-show="open" class="h-fit flex flex-col justify-between bg-white absolute top-[60px] left-0  w-full md:hidden px-4 z-30 pt-4">
 
         <div class="flex flex-col space-y-1 h-fit font-inter_medium">
             <a  class=" px-2 py-1 hover:bg-sky-100 rounded-md  " href="/" :class="{'bg-sky-100' : currentroute=='home'}" @click.prevent.stop="$dispatch('linkaction',{link: '{{route('home')}}', route: 'home', fragment: 'page-content'});

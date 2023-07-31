@@ -30,7 +30,8 @@
             "Ynotz\\SmartPages\\": "modules/Ynotz/SmartPages/src/",
             "Ynotz\\EasyAdmin\\": "modules/Ynotz/EasyAdmin/src/",
             "Ynotz\\AccessControl\\": "modules/Ynotz/AccessControl/src/",
-            "Ynotz\\MediaManager\\": "modules/Ynotz/MediaManager/src/"
+            "Ynotz\\MediaManager\\": "modules/Ynotz/MediaManager/src/",
+            "Ynotz\\Metatags\\": "modules/Ynotz/Metatags/src/"
         }
     },
     "autoload-dev": {

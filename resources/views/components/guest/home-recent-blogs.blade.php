@@ -10,12 +10,12 @@
         <div class=" lg:w-[35%]  lg:order-2 ">
             <div class=" relative mt-[9rem] sm:mt-[10rem] lg:mt-[11rem] xl:mt-[12.5rem] 2xl:mt-[12rem] transition  lg:-translate-y-4">
                 <div class=" w-fit mx-auto ">
-                    <img class=" w-[4rem] sm:w-24 xl:w-28 2xl:w-32 translate-x-4 lg:-translate-x-0" src="{{asset('images/home/dudu-5.png')}}" alt="Our dearest Dudu">
+                    <img class=" w-[4rem] sm:w-24 xl:w-28 2xl:w-32 sm:translate-x-4 lg:-translate-x-0" src="{{asset('images/home/dudu-5-copy.webp')}}" alt="Our dearest Dudu">
                 </div>
 
-                <img class="absolute w-48 xs:w-56  sm:w-60 lg:w-64 xl:w-72 right-[50%] sm:right-[53%] md:right-[52%] lg:right-[59%] xl:right-[60%] 2xl:right-[60%] bottom-[75%]" src="{{asset('images/home/dialog-7.webp')}}" alt="Dudu speaking">
+                <img class="absolute w-44 xs:w-44  sm:w-48 lg:w-52 xl:w-56 right-[54%] sm:right-[53%] md:right-[52%] lg:right-[59%] xl:right-[60%] 2xl:right-[60%] bottom-[75%]" src="{{asset('images/home/home-blog-dialogue-1.webp')}}" alt="Dudu speaking">
 
-                <img class="absolute w-40  sm:w-44 md:w-48 lg:w-56 xl:w-60 left-[60%] xs:left-[61%] sm:left-[61%] md:left-[58%] lg:left-[64%] xl:left-[66%] 2xl:left-[66%] bottom-[75%]" src="{{asset('images/home/dialog-8.webp')}}" alt="Dudu speaking">
+                <img class="absolute w-40  sm:w-40 md:w-44 lg:w-48 xl:w-52 left-[57%] xs:left-[61%] sm:left-[61%] md:left-[58%] lg:left-[66%] xl:left-[66%] 2xl:left-[66%] bottom-[75%]" src="{{asset('images/home/home-blog-dialogue-2.webp')}}" alt="Dudu speaking">
 
             </div>
 

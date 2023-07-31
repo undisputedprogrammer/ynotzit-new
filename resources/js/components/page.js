@@ -14,7 +14,15 @@ export default () => ({
             await window.sleep(50);
             el = document.getElementById(this.panelId);
         }
-        this.$store.app.xpages[link] = el.innerHTML;
+        if (this.$store.app.xpages == undefined) {
+            this.$store.app.xpages = [];
+        }
+        if (this.$store.app.xpages[link] == undefined) {
+            this.$store.app.xpages[link] = {};
+        }
+        setTimeout(() => {
+            this.$store.app.xpages[link].html = el.innerHTML;
+        }, 500);
         // history.pushState({href: link}, '', link);
         history.pushState({href: link, route: route, target: this.panelId, fragment: 'main-panel'}, '', link);
     },
@@ -26,12 +34,21 @@ export default () => ({
             let fragment = e.state.fragment;
             this.showPage = false;
             this.ajaxLoading = true;
+            if (this.$store.app.xpages == undefined) {
+                this.$store.app.xpages = [];
+            }
+            if (this.$store.app.xpages[link] == undefined) {
+                this.$store.app.xpages[link] = {};
+            }
             if (this.$store.app.xpages[link] != undefined) {
                 setTimeout(() => {
                     this.showPage = true;
                     // this.page = this.$store.app.xpages[link];
                     this.$dispatch('pagechanged', {currentpath: link, currentroute: route, target: target, fragment: fragment});
-                    this.$dispatch('contentupdate', {content: this.$store.app.xpages[link], target: target});
+                    this.$dispatch('contentupdate', {content: this.$store.app.xpages[link].html, target: target});
+                    if (this.$store.app.xpages[link].x_metatags != undefined) {
+                        this.$dispatch('metachange', {data: this.$store.app.xpages[link].x_metatags});
+                    }
                     this.ajaxLoading = false;
                 },
                     100
@@ -92,7 +109,7 @@ export default () => ({
             if (this.$store.app.xpages[thelink] != undefined) {
                 setTimeout(() => {
                     this.showPage = true;
-                    this.$dispatch('contentupdate', {content: this.$store.app.xpages[thelink], target: targetPanelId});
+                    this.$dispatch('contentupdate', {content: this.$store.app.xpages[thelink].html, target: targetPanelId});
                     this.$dispatch('pagechanged', {currentpath: link, currentroute: detail.route});
                     this.ajaxLoading = false;
                 },
@@ -128,15 +145,24 @@ export default () => ({
                 }
               ).then(
                 (r) => {
-                    // console.log(r);
+                    console.log(r.data);
                     this.showPage = false;
                     this.ajax = true;
                     setTimeout(
                         () => {
                             // document.getElementById(targetPanelId).innerHTML = r.data;
-                            this.$dispatch('contentupdate', {content: r.data, target: targetPanelId});
+                            this.$dispatch('contentupdate', {content: r.data.html, target: targetPanelId});
                             // this.$dispatch('pagechanged', {currentpath: link, currentroute: detail.route});
                             // this.page = r.data;
+
+                            if (r.data.x_metatags != undefined) {
+                                console.log('meta change');
+                                this.$dispatch('xmetachange', {data: r.data.x_metatags});
+                            }
+                            if (r.data.x_title != undefined) {
+
+                                this.$dispatch('xtitlechange', {data: r.data.x_title});
+                            }
                             this.showPage = true;
                             this.ajaxLoading = false;
                         },
@@ -146,7 +172,10 @@ export default () => ({
                         this.$store.app.xpages = [];
                     }
                     if (targetPanelId == this.panelId) {
+
                         this.$store.app.xpages[thelink] = r.data;
+
+
                         // history.pushState({href: thelink, route: theRoute}, '', thelink);
                         history.pushState({href: thelink, route: theRoute, target: targetPanelId, fragment: fr}, '', thelink);
                         this.$dispatch('pagechanged', {currentpath: link, currentroute: detail.route});
@@ -208,7 +237,7 @@ export default () => ({
                         () => {
 
                             // document.getElementById(targetPanelId).innerHTML = r.data;
-                            this.$dispatch('contentupdate', {content: r.data, target: targetPanelId});
+                            this.$dispatch('contentupdate', {content: r.data.html, target: targetPanelId});
                             // this.$dispatch('pagechanged', {currentpath: link, currentroute: detail.route});
                             // this.page = r.data;
                             this.showPage = true;

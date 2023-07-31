@@ -1,6 +1,7 @@
 import './bootstrap';
 
 import Alpine from 'alpinejs';
+
 import persist from '@alpinejs/persist'
 import page from '@/components/page';
 import utils from '@/components/utils';
@@ -24,4 +25,6 @@ Alpine.data('initPage', page);
 Alpine.data('progressBar', progressbar);
 
 Alpine.start();
+
+
 

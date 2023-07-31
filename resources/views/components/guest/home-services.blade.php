@@ -4,19 +4,19 @@
 
     {{-- park section --}}
     <div class=" flex w-full sm:w-[96%] lg:w-full xl:w-[88%] 2xl:w-[82%] mx-auto justify-between items-end">
-        <img class=" w-[48%] sm:w-[40%] md:w-[34%] lg:w-[30%] xl:w-[29%] h-fit" src="{{asset('images/home/Girl-2.png')}}" alt="tree at a park">
-        <img class="w-[28%] sm:w-[22%] md:w-[19%] lg:w-[17%] xl:w-[16%] h-fit" src="{{asset('images/home/sign board.png')}}" alt=" dudu's signboard">
+        <img class=" w-[48%] sm:w-[40%] md:w-[34%] lg:w-[30%] xl:w-[29%] h-fit" src="{{asset('images/home/Girl-2.webp')}}" alt="tree at a park">
+        <img class="w-[28%] sm:w-[22%] md:w-[19%] lg:w-[17%] xl:w-[16%] h-fit" src="{{asset('images/home/sign board.webp')}}" alt=" dudu's signboard">
     </div>
     {{-- park section ends --}}
     <div class=" order-2 lg:-mt-32 xl:-mt-36 transition ease-in-out">
         <div class=" relative mt-[6rem] md:mt-[5rem] lg:mt-0 ease-in-out transition md:translate-x-10 lg:translate-x-0 xl:translate-x-10">
             <div class=" w-fit mx-auto ">
-                <img class=" w-20 sm:w-24 xl:w-28 2xl:w-32 -translate-x-0" src="{{asset('images/home/dudu-3.png')}}" alt="Our dearest Dudu">
+                <img class=" w-20 sm:w-24 xl:w-28 2xl:w-32 -translate-x-0" src="{{asset('images/home/dudu-3.webp')}}" alt="Our dearest Dudu">
             </div>
 
-            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 right-[calc(50%+32px)] xl:right-[calc(50%+37px)] 2xl:right-[calc(50%+47px)] bottom-[75%]" src="{{asset('images/home/home-service-dialog-1.png')}}" alt="Dudu speaking">
+            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 right-[calc(50%+32px)] xl:right-[calc(50%+37px)] 2xl:right-[calc(50%+47px)] bottom-[75%]" src="{{asset('images/home/home-service-dialog-1.webp')}}" alt="Dudu speaking">
 
-            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 left-[calc(55%+7px)] sm:left-[calc(54%+7px)] lg:left-[calc(53%+7px)] xl:left-[calc(50%+37px)] 2xl:left-[calc(50%+47px)] bottom-[45%]" src="{{asset('images/home/home-service-dialog-2.png')}}" alt="Dudu speaking">
+            <img class="absolute w-36 sm:w-40 lg:w-48 xl:w-52 left-[calc(55%+7px)] sm:left-[calc(54%+7px)] lg:left-[calc(53%+7px)] xl:left-[calc(50%+37px)] 2xl:left-[calc(50%+47px)] bottom-[45%]" src="{{asset('images/home/home-service-dialog-2.webp')}}" alt="Dudu speaking">
 
         </div>
 

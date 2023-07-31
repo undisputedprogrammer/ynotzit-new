@@ -1,18 +1,85 @@
 <!DOCTYPE html>
-<html x-data="{ href: '', currentpath: '{{url()->current()}}', currentroute: '{{ Route::currentRouteName() }}', compact: $persist(false)}"
+<html x-data="{ href: '', currentpath: '{{url()->current()}}', currentroute: '{{ Route::currentRouteName() }}', compact: $persist(false), metatags: [], xtitle: '',
+    nameMetas() {
+        return this.metatags.filter(
+            (m) => {
+                return m.name != undefined;
+            }
+        );
+    },
+    propertyMetas() {
+        return this.metatags.filter(
+            (m) => {
+                return m.property != undefined;
+            }
+        );
+    },}"
  lang="{{ str_replace('_', '-', app()->getLocale()) }}"
-x-init="window.landingUrl = '{{\Request::getRequestUri()}}'; window.landingRoute = '{{ Route::currentRouteName() }}'; window.renderedpanel = 'pagecontent';"
+x-init="
+window.landingUrl = '{{Request::getRequestUri()}}'; window.landingRoute = '{{ Route::currentRouteName() }}'; window.renderedpanel = 'pagecontent';
+@foreach (session()->get('metatags') as $tag)
+    @if (isset($tag['name']))
+        metatags.push(
+            {
+                name: '{{$tag['name']}}',
+                content: '{{$tag['content']}}',
+                is_name: true,
+            }
+        );
+    @else
+        metatags.push(
+            {
+                property: '{{$tag['property']}}',
+                content: '{{$tag['content']}}',
+                is_name: false
+            }
+        );
+    @endif
+@endforeach
+if (metatags.length > 0) {
+    theLink = window.landunUrl;
+    setTimeout(() => {
+        if ($store.app.xpages == undefined) {
+            $store.app.xpages = [];
+        }
+        if ($store.app.xpages[theLink] == undefined) {
+            $store.app.xpages[theLink] = {};
+        }
+        $store.app.xpages[theLink].meta = JSON.stringify(metatags);
+    }, 500);
+
+}
+xtitle='{{session()->get('title') ?? config('app.name')}}';
+"
+@xmetachange="
+    console.log($event.detail.data);
+    metatags = JSON.parse($event.detail.data);
+"
+@xtitlechange="
+    console.log($event.detail.data);
+    xtitle = $event.detail.data;
+"
 @pagechanged.window="
 currentpath=$event.detail.currentpath;
 currentroute=$event.detail.currentroute;"
 @routechange.window="currentroute=$event.detail.route;"
 >
     <head>
-        <title>{{ config('app.name', 'Laravel') }}</title>
+
+        <title x-text="xtitle"></title>
+        {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
         <link rel="shortcut icon" type="image/x-icon" href="{{asset('images/favicon.ico')}}">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <template x-for="tag in nameMetas()">
+            <meta :name="tag.name" :content="tag.content" >
+        </template>
+
+        <template x-for="tag in propertyMetas()">
+                <meta :property="tag.property" :content="tag.content" >
+        </template>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -42,6 +109,7 @@ currentroute=$event.detail.currentroute;"
                     console.log('target reached');
                     show = false;
                     setTimeout(() => {
+
                         $el.innerHTML = $event.detail.content;
                         show = true;},
                         400

@@ -18,7 +18,6 @@ class MailController extends SmartController
         $details=$request->validate([
             'name'=>['required','min:3'],
             'email'=>['required','email'],
-
             'phone'=>['required','min:10'],
             'company'=>['required'],
             'message'=>['required','min:5'],
