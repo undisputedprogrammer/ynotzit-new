@@ -1,7 +1,7 @@
 <nav x-data="{open:false}" class="  w-full flex items-end bg-white md:items-end justify-between h-[60px] md:h-[100px] xl:h-[110px] md:pb-4  md:px-24 lg:px-28 2xl:px-28 ">
 
 
-        <img @click.prevent.stop="$dispatch('linkaction', {link: '{{route('home')}}', route: 'home', fragment: 'page-content'})" class="h-9 md:h-11 lg:h-12 xl:h-14 2xl:h-14 ml-4" src="{{asset('images/home/ynotz it solutions-01.webp')}}" alt="">
+        <img @click.prevent.stop="$dispatch('linkaction', {link: '{{route('home')}}', route: 'home', fragment: 'page-content'})" class=" cursor-pointer h-9 md:h-11 lg:h-12 xl:h-14 2xl:h-14 ml-4" src="{{asset('images/home/ynotz it solutions-01.webp')}}" alt="">
 
     <button class="text-gray-500 w-10 h-10 relative focus:outline-none mr-1.5 md:hidden" @click="open = !open">
         <span class="sr-only">Open main menu</span>

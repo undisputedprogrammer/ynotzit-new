@@ -70,6 +70,7 @@ class BlogController extends SmartController
 
     public function search(Request $request){
         $blogs = Blog::where('title','like','%'.$request['title'].'%')->get(['title','slug'])->take(10);
+
         $view =  view('blog.search-results',compact('blogs'))->fragment('search-result');
         return response()->json($view);
     }

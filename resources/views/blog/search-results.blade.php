@@ -1,6 +1,6 @@
 <x-easyadmin::guest-layout>
 @fragment('search-result')
-    @if (count($blogs)>0)
+    @if ($blogs != null)
             @foreach ($blogs as $blog)
             <a class="  rounded-sm  " href="/blog?title={{$blog['slug']}}">
                 <div class="flex items-center space-x-2 bg-gray-100 bg-opacity-100 opacity-100 hover:bg-yellow-100 py-1 px-1 rounded-sm">
