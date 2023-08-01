@@ -1,6 +1,6 @@
 <x-easyadmin::guest-layout>
 
-<div class="  mx-auto  mt-3 w-[90%] 2xl:w-[80%] justify-between border-b-2 border-gray-400">
+<div class="  mx-auto  mt-3 mb-12 lg:mb-20 w-[90%] 2xl:w-[80%] justify-between border-b-2 border-gray-400">
     <div class=" w-full flex flex-col md:flex-row 2xl:justify-evenly items-center md:space-x-4  ">
         <div class="order-2 md:order-1 basis-1/4 md:basis-3/5 lg:basis-[65%] xl:basis-[60%]">
             <h1 class="  text-lg lg:text-2xl xl:text-3xl text-black ">{{$blog->title}}</h1>
@@ -10,6 +10,8 @@
 
 
         {{-- search field begins --}}
+
+        {{-- checkpoint --}}
 
         <div x-data="{
             show: false,
@@ -26,6 +28,12 @@
 
             },
 
+            get searchResults() {
+                return this.blogs.filter(
+                    i => i.title.includes(this.text)
+                )
+            },
+
             getBlogs(input) {
                 axios.get('/api/search/blogs', {
                 params: {
@@ -33,9 +41,12 @@
                     }
                 })
                 .then(function (response) {
-                    console.log(response.data);
-
-                    $dispatch('test',{html: response.data});
+                    //console.log(response.data);
+                    if(this.blogs != response.data){
+                        this.blogs = response.data;
+                        //this.searchResults();
+                        $dispatch('test',{html: response.data});
+                    }
 
                     // this.blogs=response.data;
 
@@ -57,7 +68,7 @@
             <div x-show="show" x-cloak x-transition id="search-results" class="  absolute top-[100%] mt-1.5 w-full bg-white shadow-md rounded-md px-[4px] flex flex-col pb-1 font-montmedium text-sm">
                 <p class=" text-sm font-montmedium leading-none" x-text="prompt"></p>
 
-                <div x-data="resultshow" x-transition id="search-update" @test.window="
+                <div x-show="resultshow" x-transition id="search-update" @test.window="
                 resultshow = false;
                 setTimeout(() => {
                     $el.innerHTML=$event.detail.html;
@@ -65,12 +76,12 @@
                     100
                 );
                 " class=" opacity-100 bg-white">
-                <template x-for="blog in blogs" >
+                <template x-model="blogs" x-for="blog in searchResults"  >
                     <a class=" py-1.5 px-1.5 mt-[2px] bg-gray-100 rounded-sm  " href="">
                         <div class="flex items-center space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
-                              </svg>
+                            </svg>
 
                             <p class="text-sm font-montmedium leading-[1px]" x-text="blog.title" ></p>
                         </div>
@@ -144,9 +155,13 @@
         <h1 class=" text-xl font-inter_semibold">Popular posts</h1>
 
         @foreach ($popular as $value)
-            <div class=" flex w-full space-x-2 py-4 my-3 border-b-2">
+            <div @click.prevent.stop="$dispatch('linkaction',{link: '/blog?title={{$value['slug']}}', route: 'view-blog', fragment : 'page-content'})" class=" flex w-full space-x-2 py-4 my-3 border-b-2">
                 <img class="w-[30%] aspect-[10/6]" src="/storage/images/{{$value['image']}}" alt="">
-                <h3 class=" font-inter_regular text-sm line-clamp-2">{{$value['title']}}</h3>
+                <div class="flex flex-col">
+                    <h3 class=" font-medium text-sm line-clamp-2">{{$value['title']}}</h3>
+                    <p class="font-inter_regular text-sm line-clamp-2 text-gray-500">{{$value['description']}}</p>
+                </div>
+
             </div>
         @endforeach
 
@@ -157,6 +172,6 @@
 </div>
 </div>
 
-
+<x-guest.footer/>
 
 </x-easyadmin::guest-layout>

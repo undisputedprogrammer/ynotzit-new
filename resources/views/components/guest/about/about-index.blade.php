@@ -5,10 +5,10 @@
         <div class=" lg:w-[35%]  lg:order-2 ">
             <div class=" relative mt-[7rem] sm:mt-[7rem] lg:mt-[8rem] transition  ">
                 <div class=" w-fit mx-auto ">
-                    <img class=" w-20 sm:w-24 xl:w-32 2xl:w-36 -translate-x-24 lg:-translate-x-4" src="{{asset('images/home/dudu-5.png')}}" alt="Our dearest Dudu">
+                    <img class=" w-20 sm:w-24 xl:w-32 2xl:w-36 -translate-x-24 lg:-translate-x-4" src="{{asset('images/about/dudu-5.webp')}}" alt="Our dearest Dudu">
                 </div>
 
-                <img class="absolute w-36  sm:w-40 lg:w-40 xl:w-56 left-[calc(38%)] sm:left-[43%] md:left-[45%] lg:left-[72%] xl:left-[74%] 2xl:left-76%] bottom-[75%]" src="{{asset('images/about/About dialog.png')}}" alt="Dudu speaking">
+                <img class="absolute w-36  sm:w-40 lg:w-40 xl:w-56 left-[calc(38%)] sm:left-[43%] md:left-[45%] lg:left-[72%] xl:left-[74%] 2xl:left-76%] bottom-[75%]" src="{{asset('images/about/About dialog.webp')}}" alt="Dudu speaking">
 
             </div>
 

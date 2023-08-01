@@ -69,13 +69,9 @@ Route::get('/affiliate/register', [MarketerController::class, 'registration'])->
 
 Route::post('/affiliate/registration/submit',[MarketerController::class, 'register'])->name('affiliate-submit-form');
 
-Route::get('/affiliate/login', function(){
-    return view('affiliate.login');
-})->name('affiliate-login');
+Route::get('/affiliate/login', [MarketerController::class, 'affiliateLogin'])->name('affiliate-login');
 
-Route::get('/marketer/login', function(){
-    return view('affiliate.login');
-})->name('marketer-login');
+Route::get('/marketer/login', [MarketerController::class, 'affiliateLogin'])->name('marketer-login');
 
 Route::post('/affiliate/authenticate', [MarketerController::class, 'authenticate']);
 

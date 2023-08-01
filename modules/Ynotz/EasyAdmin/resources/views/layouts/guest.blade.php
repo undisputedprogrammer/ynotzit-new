@@ -52,11 +52,11 @@ if (metatags.length > 0) {
 xtitle='{{session()->get('title') ?? config('app.name')}}';
 "
 @xmetachange="
-    console.log($event.detail.data);
+    //console.log($event.detail.data);
     metatags = JSON.parse($event.detail.data);
 "
 @xtitlechange="
-    console.log($event.detail.data);
+    //console.log($event.detail.data);
     xtitle = $event.detail.data;
 "
 @pagechanged.window="

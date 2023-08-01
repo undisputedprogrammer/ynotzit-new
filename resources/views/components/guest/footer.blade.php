@@ -13,7 +13,7 @@
         <div class=" flex flex-col pl-6">
             {{-- <a href="/careers" >Careers</a> --}}
             <a @click.prevent.stop="$dispatch('linkaction',{link: '{{route('contact')}}', route: 'contact', fragment: 'page-content'})" href="/contact" class="">Contact</a>
-            <a @click.prevent.stop="$dispatch('linkaction',{link: '{{route('affiliate-home')}}', route: 'affiliate-home', fragment: 'page-content'})" href="/affiliate/home" class="md:pt-6 pt-2">Affiliate login</a>
+            <a @click.prevent.stop="$dispatch('linkaction',{link:'{{route('affiliate-login')}}', route: 'affiliate-login', fragment: 'page-content'})" href="/affiliate/login" class="md:pt-6 pt-2">Affiliate login</a>
             <a @click.prevent.stop="$dispatch('linkaction',{link: '{{route('services')}}', route: 'services', fragment: 'page-content'})" href="/services" class="md:pt-6 pt-2">Web Development</a>
 
 

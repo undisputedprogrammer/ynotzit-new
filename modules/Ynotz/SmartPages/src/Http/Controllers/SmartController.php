@@ -30,6 +30,7 @@ class SmartController extends Controller
             MetatagHelper::clearAllMeta();
             return $result;
         }
+
         return view($view, $args);
     }
 }

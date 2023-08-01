@@ -16,6 +16,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Database\Eloquent\Builder;
+use Ynotz\Metatags\Helpers\MetatagHelper;
 use Ynotz\SmartPages\Http\Controllers\SmartController;
 
 class MarketerController extends SmartController
@@ -198,5 +199,12 @@ class MarketerController extends SmartController
 
     public function registration(){
         return $this->buildResponse('affiliate.register');
+    }
+
+    public function affiliateLogin(Request $request){
+        MetatagHelper::clearAllMeta();
+        MetatagHelper::setTitle('login - YNOTZ IT SOLUTIONS');
+        MetatagHelper::addMetatags(['description'=>'Login as affiliate']);
+        return $this->buildResponse('affiliate.login');
     }
 }

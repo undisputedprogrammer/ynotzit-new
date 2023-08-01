@@ -22,11 +22,11 @@
             <img class=" hidden lg:block absolute top-0 -left-[16%] xl:-left-[12%] 2xl:-left-[8%] opacity-40 w-64" src="{{asset('images/home/Rectangle darker - Copy.webp')}}" alt="">
         </h1>
         <div class=" w-fit  lg:w-full  mx-auto my-8 flex flex-col space-y-3 items-start">
-            <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
+            <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-center lg:w-full lg:justify-between">
                 <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- We listen to your needs</p>
                 <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Honest technical guidance</p>
             </div>
-            <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-start lg:w-full lg:justify-between">
+            <div class="flex  flex-col lg:flex-row lg:space-y-0 space-y-3 items-center lg:w-full lg:justify-between">
                 <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Clear communication</p>
                 <p class=" text-xs sm:text-[13px] sm:leading-4 md:text-sm 2xl:text-base text-black font-inter_regular w-full lg:w-1/2">- Optimum solutions</p>
             </div>

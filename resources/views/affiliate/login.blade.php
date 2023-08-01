@@ -1,4 +1,4 @@
-<x-default-layout>
+<x-easyadmin::guest-layout>
 
 
     {{-- <x-marketer.nav></x-marketer.nav> --}}
@@ -48,4 +48,4 @@
         </div>
     </div>
 
-</x-default-layout>
+</x-easyadmin::guest-layout>

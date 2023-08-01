@@ -27,31 +27,34 @@ class PageController extends SmartController
     public function about(){
         MetatagHelper::clearAllMeta();
         MetatagHelper::setTitle('About - YNOTZ IT SOLUTIONS');
+        MetatagHelper::addMetatags(['description'=> 'We are a team of logical, innovative and creative minds dedicated to provide best quality digital products. We focus on quality and innovation. Leave all your software and graphical needs to us.']);
         return $this->buildResponse('guest.about');
     }
 
     public function services(){
         MetatagHelper::clearAllMeta();
-        MetatagHelper::setTitle('YNOTZ IT SOLUTIONS');
+        MetatagHelper::setTitle('Services - YNOTZ IT SOLUTIONS');
+        MetatagHelper::addMetatags(['description'=> 'We offer services including Website and Web application Development, Mobile Application Development, Digital Marketing, Graphics or Video Creatives and Outsourced Development. We strive for quality and we thrive on customer satisfaction']);
         return $this->buildResponse('guest.service');
     }
 
     public function blogs(){
         MetatagHelper::clearAllMeta();
-        MetatagHelper::setTitle('YNOTZ IT SOLUTIONS');
+        MetatagHelper::setTitle('Blog - YNOTZ IT SOLUTIONS');
         $blogs=Blog::all();
         return $this->buildResponse('guest.blog', compact('blogs'));
     }
 
     public function contact(){
         MetatagHelper::clearAllMeta();
-        MetatagHelper::setTitle('YNOTZ IT SOLUTIONS');
+        MetatagHelper::setTitle('Contact - YNOTZ IT SOLUTIONS');
+        MetatagHelper::addMetatags(['description'=> 'Lets discuss about what we can build together. Feel free to contact us or book an appointment. We are here to assist you.']);
         return $this->buildResponse('guest.contact');
     }
 
     public function offer(){
         MetatagHelper::clearAllMeta();
-        MetatagHelper::setTitle('YNOTZ IT SOLUTIONS');
+        MetatagHelper::setTitle('Offers - YNOTZ IT SOLUTIONS');
 
         return $this->buildResponse('guest.super-startup-offer');
     }

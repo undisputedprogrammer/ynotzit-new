@@ -11,10 +11,10 @@
     <div class=" order-1 md:w-[40%] lg:w-[26%]  xl:w-[23%] 2xl:w-[30%] 2xl:mr-16  transition ease-in-out">
         <div class=" relative mt-[7rem] lg:mt-[1rem] xl:mt-0 ml-16">
             <div class=" w-fit  ">
-                <img class=" w-20 sm:w-20  lg:w-24 xl:w-28 2xl:w-28 translate-x-3 sm:translate-x-5" src="{{asset('images/home/dudu-5.png')}}" alt="Our dearest Dudu">
+                <img class=" w-20 sm:w-20  lg:w-24 xl:w-28 2xl:w-28 translate-x-3 sm:translate-x-5" src="{{asset('images/about/dudu-5.webp')}}" alt="Our dearest Dudu">
             </div>
 
-            <img class="absolute w-36 md:w-40 lg:w-44 xl:w-48 2xl:w-52 left-[5.4rem] md:left-[5.7rem] lg:left-[7rem] xl:left-[7.5rem] 2xl:left-[8rem] bottom-[75%]" src="{{asset('images/service/Service dislog.png')}}" alt="Dudu speaking">
+            <img class="absolute w-36 md:w-40 lg:w-44 xl:w-48 2xl:w-52 left-[5.4rem] md:left-[5.7rem] lg:left-[7rem] xl:left-[7.5rem] 2xl:left-[8rem] bottom-[75%]" src="{{asset('images/service/Service dislog.webp')}}" alt="Dudu speaking">
 
         </div>
 

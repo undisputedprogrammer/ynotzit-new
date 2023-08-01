@@ -6,6 +6,7 @@ use App\Models\Blog;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Ynotz\Metatags\Helpers\MetatagHelper;
 use Ynotz\SmartPages\Http\Controllers\SmartController;
 
 class BlogController extends SmartController
@@ -71,8 +72,8 @@ class BlogController extends SmartController
     public function search(Request $request){
         $blogs = Blog::where('title','like','%'.$request['title'].'%')->get(['title','slug'])->take(10);
 
-        $view =  view('blog.search-results',compact('blogs'))->fragment('search-result');
-        return response()->json($view);
+        $view =  view('blog.search-results',compact('blogs'));
+        return response($view);
     }
 
     public function single(Request $request){
@@ -85,7 +86,9 @@ class BlogController extends SmartController
         $data=[
             'blog'=>$blog,
         ];
-
+        MetatagHelper::clearAllMeta();
+        MetatagHelper::setTitle($blog['title']);
+        MetatagHelper::addMetatags(['description'=>$blog['description']]);
         return $this->buildResponse('blog.display-blog', compact('blog','popular'));
     }
 

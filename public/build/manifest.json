@@ -20,12 +20,12 @@
     "src": "public/fonts/Inter-SemiBold.otf"
   },
   "resources/css/app.css": {
-    "file": "assets/app-06d5c7a6.css",
+    "file": "assets/app-90eae1cd.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-4ebbf8f6.js",
+    "file": "assets/app-60fb71f1.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

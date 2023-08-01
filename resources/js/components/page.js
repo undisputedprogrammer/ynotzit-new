@@ -110,6 +110,15 @@ export default () => ({
                 setTimeout(() => {
                     this.showPage = true;
                     this.$dispatch('contentupdate', {content: this.$store.app.xpages[thelink].html, target: targetPanelId});
+
+                    if (this.$store.app.xpages[thelink].x_metatags != undefined) {
+                        console.log('meta change');
+                        this.$dispatch('xmetachange', {data: this.$store.app.xpages[thelink].x_metatags});
+                    }
+                    if (this.$store.app.xpages[thelink].x_title != undefined) {
+
+                        this.$dispatch('xtitlechange', {data: this.$store.app.xpages[thelink].x_title});
+                    }
                     this.$dispatch('pagechanged', {currentpath: link, currentroute: detail.route});
                     this.ajaxLoading = false;
                 },
@@ -134,6 +143,7 @@ export default () => ({
             //     params = {x_fr: fr};
             // }
             this.ajaxLoading = true;
+            //console.log('requesting fragment '+fr);
             axios.get(
                 link,
                 {
@@ -145,7 +155,7 @@ export default () => ({
                 }
               ).then(
                 (r) => {
-                    console.log(r.data);
+                    //console.log(r.data);
                     this.showPage = false;
                     this.ajax = true;
                     setTimeout(
@@ -216,7 +226,7 @@ export default () => ({
                 (r) => {
 
 
-                    console.log(r.data);
+                    //console.log(r.data);
                     if(r.data.success != undefined && r.data.success===false){
 
                         this.$dispatch('actionresponse', {target: detail.target, content: r.data});
