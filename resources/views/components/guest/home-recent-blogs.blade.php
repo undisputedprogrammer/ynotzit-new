@@ -27,9 +27,9 @@
     <div class=" flex flex-col my-11 xl:my-16 space-y-5 sm:space-y-0 sm:flex-row justify-evenly order-3 xl:w-[88%] mx-auto">
 
         @foreach ($blogs as $blog)
-            <div @click.prevent.stop="$dispatch('linkaction',{link:'{{route('view-blog')}}', route:'view-blog', fragment: 'page-content', params:{title:'{{$blog['slug']}}'}})" class="w-[74%] sm:w-[30%]  sm:mx-0 mx-auto  relative">
+            <div @click.prevent.stop="$dispatch('linkaction',{link:'{{route('view-blog')}}', route:'view-blog', fragment: 'page-content', params:{title:'{{$blog['slug']}}'}})" class="w-[74%] sm:w-[30%]  sm:mx-0 mx-auto  relative cursor-pointer">
                 <img class="h-full aspect-video object-cover" src="/storage/images/{{$blog['image']}}" alt="Blog-image">
-                <p class=" font-inter_regular text-xs xl:text-sm w-[90%] right-[5%] bg-gradient-to-b rounded-2xl from-transparent to-white absolute bottom-4 2xl:bottom-6 text-black px-1.5 py-1 sm:line-clamp-2">{{$blog['title']}}</p>
+                <p class=" font-inter_regular text-xs xl:text-sm w-[90%] right-[5%] bg-gradient-to-b rounded-2xl from-[rgb(255,255,255,0.150)] to-white absolute bottom-4 2xl:bottom-6 text-black px-1.5 py-1 sm:line-clamp-2">{{$blog['title']}}</p>
             </div>
         @endforeach
 

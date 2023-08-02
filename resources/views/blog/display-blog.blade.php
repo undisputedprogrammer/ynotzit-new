@@ -114,7 +114,7 @@
                 $datedata=strtotime($blog['created_at']);
                 // $blog['created_at']=$datedata->format('d/m/Y');
             @endphp
-            <img class=" 2xl:w-[85%]  " src="/storage/images/{{$blog['image']}}" alt="">
+            <img class=" 2xl:w-[85%] aspect-video object-cover" src="/storage/images/{{$blog['image']}}" alt="">
             <div class=" flex justify-between items-center w-[85%]">
             <p class=" text-[10px] lg:text-xs font-montmedium text-gray-400 mt-1">{{$blog->created_at->format('d/m/y')}} | By YNOTZ IT Solutions</p>
             @auth
@@ -136,10 +136,10 @@
                     }
                 }"
                 >
-                    <a @click.prevent.stop="$dispatch('linkaction', {link: '{{route('edit-blog')}}', route: 'edit-blog', fragment: 'page-content', params:{'id':'{{$blog->id}}'}});">
+                    <a @click.prevent.stop="$dispatch('linkaction', {link: '{{route('edit-blog')}}', route: 'edit-blog', fragment: 'page-content', params:{'id':'{{$blog->id}}'}});" class=" cursor-pointer">
                         <img class="w-5 h-5 mr-3" src="{{asset('images/icons/edit-icon.svg')}}" alt="">
                     </a>
-                    <a @click.prevent.stop="$dispatch('performaction', {link: '{{route('delete-blog')}}', route: 'delete-blog', fragment: 'page-content' , params:{'id': '{{$blog->id}}'}, target: 'target-action'})" href="/blog/delete/{{$blog->id}}">
+                    <a @click.prevent.stop="$dispatch('performaction', {link: '{{route('delete-blog')}}', route: 'delete-blog', fragment: 'page-content' , params:{'id': '{{$blog->id}}'}, target: 'target-action'})" href="/blog/delete/{{$blog->id}}" class=" cursor-pointer">
                         <img class="w-5 h-5" src="{{asset('images/icons/delete-icon.svg')}}" alt="">
                     </a>
                 </div>
@@ -155,7 +155,7 @@
         <h1 class=" text-xl font-inter_semibold">Popular posts</h1>
 
         @foreach ($popular as $value)
-            <div @click.prevent.stop="$dispatch('linkaction',{link: '/blog?title={{$value['slug']}}', route: 'view-blog', fragment : 'page-content'})" class=" flex w-full space-x-2 py-4 my-3 border-b-2 items-center">
+            <div @click.prevent.stop="$dispatch('linkaction',{link: '/blog?title={{$value['slug']}}', route: 'view-blog', fragment : 'page-content'})" class=" flex w-full space-x-2 py-4 my-3 border-b-2 items-center cursor-pointer">
                 <img class=" h-20 aspect-video" src="/storage/images/{{$value['image']}}" alt="">
                 <div class="flex flex-col">
                     <h3 class=" font-medium text-sm line-clamp-2">{{$value['title']}}</h3>

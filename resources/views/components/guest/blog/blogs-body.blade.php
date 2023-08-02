@@ -7,7 +7,7 @@
     @if (count($blogs)>0)
 
     @foreach ($blogs as $blog)
-    <div @click.prevent.stop="$dispatch('linkaction',{link:'{{route('view-blog')}}', route:'view-blog', fragment: 'page-content', params:{title:'{{$blog['slug']}}'}})"  class=" w-full border border-black flex flex-col space-y-3 lg:space-y-5 pb-3 lg:pb-5 rounded-sm sm:w-[45%] md:w-[40%] lg:w-[30%] xl:w-[29%] sm:mb-6 h-fit shadow-md shadow-gray-300 hover:shadow-lg transition duration-200 hover:scale-[100.2%]">
+    <div @click.prevent.stop="$dispatch('linkaction',{link:'{{route('view-blog')}}', route:'view-blog', fragment: 'page-content', params:{title:'{{$blog['slug']}}'}})"  class=" w-full border border-black flex flex-col space-y-3 lg:space-y-5 pb-3 lg:pb-5 rounded-sm sm:w-[45%] md:w-[40%] lg:w-[30%] xl:w-[29%] sm:mb-6 h-fit shadow-md shadow-gray-300 hover:shadow-lg transition duration-200 hover:scale-[100.2%] cursor-pointer">
         <img class=" w-full aspect-video object-cover" src="/storage/images/{{$blog['image']}}" alt="">
         <h3 class=" font-inter_semibold line-clamp-1  text-base xl:text-lg px-2">{{$blog['title']}}</h3>
         <p class=" line-clamp-2 font-inter_regular text-xs xl:text-sm px-2">{{$blog['description']}}</p>
