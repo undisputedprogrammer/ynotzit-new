@@ -84,7 +84,7 @@ class BlogController extends SmartController
 
         $blog=Blog::where('slug',$request['title'])->get()->first();
         $recents = Blog::orderBy('id', 'DESC')->get()->take(3);
-        $popular = Blog::orderBy('id', 'DESC')->get()->take(4);
+        $popular = Blog::orderBy('id', 'DESC')->get()->take(6);
         // dd($blog);
         $b= Blog::find(4);
         $data=[

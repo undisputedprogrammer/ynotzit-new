@@ -28,7 +28,7 @@
 
         @foreach ($blogs as $blog)
             <div @click.prevent.stop="$dispatch('linkaction',{link:'{{route('view-blog')}}', route:'view-blog', fragment: 'page-content', params:{title:'{{$blog['slug']}}'}})" class="w-[74%] sm:w-[30%]  sm:mx-0 mx-auto  relative">
-                <img class="h-full object-contain" src="/storage/images/{{$blog['image']}}" alt="Blog-image">
+                <img class="h-full aspect-video object-cover" src="/storage/images/{{$blog['image']}}" alt="Blog-image">
                 <p class=" font-inter_regular text-xs xl:text-sm w-[90%] right-[5%] bg-gradient-to-b rounded-2xl from-transparent to-white absolute bottom-4 2xl:bottom-6 text-black px-1.5 py-1 sm:line-clamp-2">{{$blog['title']}}</p>
             </div>
         @endforeach
