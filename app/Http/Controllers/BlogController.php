@@ -20,6 +20,10 @@ class BlogController extends SmartController
         if (! Gate::allows('is-employee')) {
             abort(403);
         }
+        MetatagHelper::clearAllMeta();
+        MetatagHelper::setTitle('Upload blog - YNOTZ IT SOLUTIONS');
+        MetatagHelper::addMetatags(['description'=>'Express your knowledge and creativity to the world']);
+
         return $this->buildResponse('blog.upload');
     }
 

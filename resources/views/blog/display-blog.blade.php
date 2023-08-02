@@ -155,8 +155,8 @@
         <h1 class=" text-xl font-inter_semibold">Popular posts</h1>
 
         @foreach ($popular as $value)
-            <div @click.prevent.stop="$dispatch('linkaction',{link: '/blog?title={{$value['slug']}}', route: 'view-blog', fragment : 'page-content'})" class=" flex w-full space-x-2 py-4 my-3 border-b-2">
-                <img class="w-[30%] aspect-[10/6]" src="/storage/images/{{$value['image']}}" alt="">
+            <div @click.prevent.stop="$dispatch('linkaction',{link: '/blog?title={{$value['slug']}}', route: 'view-blog', fragment : 'page-content'})" class=" flex w-full space-x-2 py-4 my-3 border-b-2 items-center">
+                <img class=" max-h-20 aspect-[10/6]" src="/storage/images/{{$value['image']}}" alt="">
                 <div class="flex flex-col">
                     <h3 class=" font-medium text-sm line-clamp-2">{{$value['title']}}</h3>
                     <p class="font-inter_regular text-sm line-clamp-2 text-gray-500">{{$value['description']}}</p>

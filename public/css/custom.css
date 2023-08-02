@@ -9,6 +9,11 @@ body{
     color: #1976BC;
 }
 
+.text-overflow-ellipsis{
+    text-overflow: ellipsis;
+    max-width: 40ch;
+}
+
 .text-ynotz{
     color: #1976BC;
 }

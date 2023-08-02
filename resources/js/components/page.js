@@ -14,6 +14,7 @@ export default () => ({
             await window.sleep(50);
             el = document.getElementById(this.panelId);
         }
+        this.$store.xpages = [];
         if (this.$store.app.xpages == undefined) {
             this.$store.app.xpages = [];
         }
