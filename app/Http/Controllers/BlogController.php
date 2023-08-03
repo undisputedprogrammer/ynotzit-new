@@ -102,6 +102,7 @@ class BlogController extends SmartController
         }
         $blog=Blog::find($request->id);
         $blog->delete();
+        unlink('storage/images/'.$blog['image']);
         return response()->json(array('success'=>true,'message'=>'Blog deleted successfully'));
     }
 
@@ -151,7 +152,7 @@ class BlogController extends SmartController
             $filename='blog_image'.time().'.'.$ext;
             $path=$request->file('blogimg')->move('storage/images',$filename);
             $blog['image']=$filename;
-            unlink(storage_path('app/images/'.$oldfile));
+            unlink('storage/images/'.$oldfile);
         }
 
         $blog->save();
