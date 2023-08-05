@@ -76,17 +76,21 @@
               <label class="sr-only" for="message">Code</label>
 
               <textarea
+
                 class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                placeholder="Code"
+                placeholder="Blog content"
                 rows="8"
-                id="code"
+                id="editor"
                 name="code"
-                required
+
               >{{ old('code') }}</textarea>
             </div>
 
             <div class="mt-4">
-              <button
+              <button x-data = "{}"
+              x-init = "
+
+              "
                 type="submit"
                 class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
               >
@@ -101,11 +105,25 @@
 
 
   <script>
-    let uploader= document.getElementById('blog-img');
-    let label=document.getElementById('file-label');
-    uploader.addEventListener('change',()=>{
-       label.innerText = uploader.files[0].name;
-    })
+
+
+        if(document.getElementById('editor') != null || document.getElementById('editor') != undefined)
+                {
+                let editor;
+                ClassicEditor
+                    .create( document.querySelector( '#editor' ) )
+                    .then( newEditor => {
+                        editor = newEditor;
+                    })
+                    .catch( error => {
+                        console.error( error );
+                    } );
+                }
+
+        function displaydata(){
+            console.log(document.getElementById('editor').value);
+        }
+
 </script>
 
 </x-easyadmin::guest-layout>

@@ -90,9 +90,11 @@ class BlogController extends SmartController
         $data=[
             'blog'=>$blog,
         ];
+        $title = str_replace("'","",$blog['title']);
+        $description = str_replace("'","",$blog['description']);
         MetatagHelper::clearAllMeta();
-        MetatagHelper::setTitle($blog['title']);
-        MetatagHelper::addMetatags(['description'=>$blog['description']]);
+        MetatagHelper::setTitle($title);
+        MetatagHelper::addMetatags(['description'=>$description]);
         return $this->buildResponse('blog.display-blog', compact('blog','popular'));
     }
 
@@ -116,13 +118,16 @@ class BlogController extends SmartController
         if (! Gate::allows('is-employee')) {
             abort(403);
         }
+
         $request->validate([
             'title'=>['required','min:25','max:180'],
             'description'=>['required', 'min:40'],
             'code'=>['required']
         ]);
 
-        $blog= Blog::find($request->blog_id);
+        $blog = Blog::find($request->blog_id);
+
+
 
         $blog['title']=$request['title'];
         $blog['description']=$request['description'];

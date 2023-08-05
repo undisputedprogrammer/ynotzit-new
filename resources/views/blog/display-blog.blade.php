@@ -3,9 +3,9 @@
 <div class="  mx-auto  mt-3 mb-12 lg:mb-20 w-[90%] 2xl:w-[80%] justify-between border-b-2 border-gray-400">
     <div class=" w-full flex flex-col md:flex-row 2xl:justify-evenly items-center md:space-x-4  ">
         <div class="order-2 md:order-1 basis-1/4 md:basis-3/5 lg:basis-[65%] xl:basis-[60%]">
-            <h1 class="  text-lg lg:text-2xl xl:text-3xl text-black ">{{$blog->title}}</h1>
+            <h1 class="  text-lg lg:text-2xl xl:text-3xl text-black font-inter_bold ">{{$blog->title}}</h1>
 
-            <p class=" font-montregular text-sm md:text-base  ">{{$blog->description}}</p>
+            <p class=" font-montregular text-sm md:text-base font-inter_medium my-3  ">{{$blog->description}}</p>
         </div>
 
 

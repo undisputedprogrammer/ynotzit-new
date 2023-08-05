@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Ynotz\Metatags\Helpers\MetatagHelper;
 use Ynotz\SmartPages\Http\Controllers\SmartController;
 
@@ -59,5 +60,12 @@ class PageController extends SmartController
         return $this->buildResponse('guest.super-startup-offer');
     }
 
+    public function emp(Request $request){
+        if (! Gate::allows('is-employee')) {
+            return response()->json(['message'=>"Unauthorized access"], 401);
+        }
+
+        return $this->buildResponse('employee.index');
+    }
 
 }

@@ -23,11 +23,13 @@
   }
 
 
- h1 {
+ h2 {
     font-family: 'montserrat-bold';
+    margin-top: 12px;
+    margin-bottom: 12px;
     font-size: 18px;
     line-height: 28px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
     }
 
@@ -35,26 +37,34 @@
         font-family: 'montserrat-light';
         font-size: 14px;
         line-height: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 
-    h2{
+
+    h3{
         font-family:'montserrat-medium' ;
+        margin-top: 8px;
+        margin-bottom: 8px;
         font-size: 16px;
         line-height: 25px;
-        margin-top: 26px;
-        padding-left: 25px;
+        /* margin-top: 26px; */
+        /* padding-left: 25px; */
 
+    }
+
+    p {
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
 
     li{
-        margin-top: 26px;
+        /* margin-top: 26px; */
     }
 
-    li>h2{
-        margin-top: 0px;
+    li>h3{
+        /* margin-top: 0px; */
         display: inline;
     }
 
@@ -62,7 +72,7 @@
         display: block;
         font-family: 'montserrat-light';
         font-size: 13px;
-        margin-top: 7px;
+        /* margin-top: 7px; */
         line-height: 18px;
         width: 95%;
         margin-left: auto;
@@ -89,17 +99,17 @@
      }
 
     @media(min-width:1024px){
-        h1{
+        h2{
             font-size: 24px;
             line-height: 28px;
         }
 
-        h2{
+        h3{
             font-family:'montserrat-medium' ;
             font-size: 20px;
             line-height: 27px;
-            margin-top: 26px;
-            padding-left: 25px;
+            /* margin-top: 26px; */
+            /* padding-left: 25px; */
 
         }
 
@@ -114,24 +124,24 @@
         }
 
         ul,ol{
-            font-size: 17px;
+            font-size: 14px;
             line-height: 25px;
         }
     }
 
 
     @media (min-width: 1536px) {
-        h1{
+        h2{
             font-size: 24px;
             line-height: 33px;
         }
 
-        h2{
+        h3{
             font-family:'montserrat-medium' ;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 30px;
-            margin-top: 26px;
-            padding-left: 25px;
+            /* margin-top: 26px; */
+            /* padding-left: 25px; */
 
         }
 
@@ -146,7 +156,7 @@
         }
 
         ul,ol{
-            font-size: 19px;
+            font-size: 16px;
             line-height: 27px;
         }
     }

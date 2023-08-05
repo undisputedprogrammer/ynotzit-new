@@ -89,6 +89,10 @@ currentroute=$event.detail.currentroute;"
         @stack('header_js')
         <link rel="stylesheet" href="{{asset('css/custom.css')}}">
         <link rel="stylesheet" href="{{asset('css/blog.css')}}">
+
+        <script src="{{asset('assets/vendor/ckeditor5/build/ckeditor.js')}}"></script>
+
+
     </head>
     <body x-data="initPage" x-init="initAction();"
         @linkaction.window="initialised = false; fetchLink($event.detail);"

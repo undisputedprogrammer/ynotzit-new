@@ -33,12 +33,16 @@ Route::get('/offers/super-startup-offer' , [PageController::class, 'offer'])->na
 Route::post('/offer/booking', [OfferController::class, 'book'])->name('book-offer');
 
 Route::middleware('auth')->prefix('blog')->group(function(){
+
    Route::get('/upload',[BlogController::class, 'upload'])->name('upload-blog');
    Route::post('/save',[BlogController::class, 'save'])->name('save-blog');
    Route::get('/delete',[BlogController::class, 'delete'])->name('delete-blog');
    Route::get('/edit',[BlogController::class, 'edit'])->name('edit-blog');
    Route::post('/update',[BlogController::class, 'update'])->name('update-blog');
+
 });
+
+Route::get('/employee', [PageController::class, 'emp'])->middleware('auth')->name('employee-index');
 
 Route::get('/blog/{slug?}',[BlogController::class, 'single'])->name('view-blog');
 

@@ -10,14 +10,14 @@
           x-data="{ doSubmit() {
             let form = document.getElementById('blog-edit-form');
             let formdata = new FormData(form);
+            console.log(formdata.get('code'));
             $dispatch('formsubmit',{url:'{{route('update-blog')}}', route: 'update-blog',fragment: 'page-content', formData: formdata, target: 'blog-edit-form'});
 
             }}"
-           action="" id="blog-edit-form" @submit.prevent.stop="doSubmit()" class="space-y-4 w-full" method="post" enctype="multipart/form-data"
+           action="/blog/new/create" id="blog-edit-form" @submit.prevent.stop="doSubmit()" class="space-y-4 w-full" method="post" enctype="multipart/form-data"
 
            @formresponse.window="
-            console.log('inside '+$event.detail.target);
-            console.log($el.id);
+            console.log('inside form response');
             if ($event.detail.target == $el.id) {
             console.log('response for form submission');
             console.log($event.detail.content);
@@ -43,14 +43,12 @@
                 name="title"
                 id="title"
 
-                value="{{$blog->title}}"
+                value="{{ $blog->title }}"
               />
               @error('title')
                   <p class="text-red-600 text-xs font-inter_medium">{{$message}}</p>
               @enderror
             </div>
-
-            {{-- hidden field --}}
             <input class=" hidden" type="text" name="blog_id" value="{{$blog->id}}">
 
             <div>
@@ -63,7 +61,7 @@
                   name="description"
                   id="description"
 
-                  value="{{$blog->description }}"
+                  value="{{ $blog->description }}"
                 />
             </div>
 
@@ -80,17 +78,36 @@
               <label class="sr-only" for="message">Code</label>
 
               <textarea
+
                 class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                placeholder="Code"
+                placeholder="Blog content"
                 rows="8"
-                id="code"
+                id="editor"
                 name="code"
-                required
+
               >{{ $blog->content }}</textarea>
             </div>
 
             <div class="mt-4">
-              <button
+              <button x-data = "{
+                ckeditor : null
+              }"
+            {{-- if(document.getElementById('editor') != null || document.getElementById('editor') != undefined)
+                {
+                let editor;
+                ClassicEditor
+                    .create( document.querySelector( '#editor' ) )
+                    .then( newEditor => {
+                        editor = newEditor;
+                        ckeditor = editor;
+                        console.log('ckeditor initialised');
+                        console.log(ckeditor.getData());
+                    })
+                    .catch( error => {
+                        console.error( error );
+                    } );
+                } --}}
+              "
                 type="submit"
                 class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
               >
@@ -104,12 +121,26 @@
   </section>
 
 
-  {{-- <script>
-    let uploader= document.getElementById('blog-img');
-    let label=document.getElementById('file-label');
-    uploader.addEventListener('change',()=>{
-       label.innerText = uploader.files[0].name;
-    })
-</script> --}}
+  <script>
+
+
+                let editor;
+                ClassicEditor
+                    .create( document.querySelector( '#editor' ) )
+                    .then( newEditor => {
+                        editor = newEditor;
+                        ckeditor = editor;
+                        console.log('ckeditor initialised');
+                        // console.log(ckeditor.getData());
+                    })
+                    .catch( error => {
+                        console.error( error );
+                    } );
+
+
+
+
+
+</script>
 
 </x-easyadmin::guest-layout>

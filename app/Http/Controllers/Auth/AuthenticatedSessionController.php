@@ -35,6 +35,9 @@ class AuthenticatedSessionController extends Controller
         elseif($request->user()->hasRole('marketer')){
             return redirect('/affiliate/login');
         }
+        elseif ($request->user()->hasRole('employee')) {
+            return redirect('/employee');
+        }
 
         return redirect()->intended(RouteServiceProvider::HOME);
     }
