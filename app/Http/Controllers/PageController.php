@@ -68,4 +68,8 @@ class PageController extends SmartController
         return $this->buildResponse('employee.index');
     }
 
+    public function privacypolicy(){
+        return $this->buildResponse('guest.privacy-policy');
+    }
+
 }

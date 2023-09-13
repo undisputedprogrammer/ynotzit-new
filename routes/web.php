@@ -29,6 +29,7 @@ Route::get('/contact',[PageController::class, 'contact'])->name('contact');
 Route::post('/connect',[MailController::class, 'connect'])->name('connect');
 
 Route::get('/offers/super-startup-offer' , [PageController::class, 'offer'])->name('super-startup-offer');
+Route::get('/privacy-policy',[PageController::class, 'privacypolicy'])->name('privacy-policy');
 
 Route::post('/offer/booking', [OfferController::class, 'book'])->name('book-offer');
 

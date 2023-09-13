@@ -25,7 +25,7 @@
             {{-- <a href="/services/SEO" class="md:pt-6 pt-2">Search Engine Optimisation</a> --}}
 
             <a @click.prevent.stop="$dispatch('linkaction',{link: '{{route('services')}}', route: 'services', fragment: 'page-content'})" href="/services" class="md:pt-6 pt-2">Graphics / videos / photos</a>
-            <a @click.prevent.stop="$dispatch('linkaction',{link: '{{route('home')}}', route: 'home', fragment: 'page-content'})" href="/privacy-policy" class="md:pt-6 pt-2">Privacy Policy</a>
+            <a @click.prevent.stop="$dispatch('linkaction',{link: '{{route('privacy-policy')}}', route: 'privacy-policy', fragment: 'page-content'})" href="/privacy-policy" class="md:pt-6 pt-2">Privacy Policy</a>
 
         </div>
 
