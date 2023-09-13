@@ -17,6 +17,7 @@
  lang="{{ str_replace('_', '-', app()->getLocale()) }}"
 x-init="
 window.landingUrl = '{{Request::getRequestUri()}}'; window.landingRoute = '{{ Route::currentRouteName() }}'; window.renderedpanel = 'pagecontent';
+@if(session()->get('metatags') != null)
 @foreach (session()->get('metatags') as $tag)
     @if (isset($tag['name']))
         metatags.push(
@@ -36,6 +37,7 @@ window.landingUrl = '{{Request::getRequestUri()}}'; window.landingRoute = '{{ Ro
         );
     @endif
 @endforeach
+@endif
 if (metatags.length > 0) {
     theLink = window.landunUrl;
     setTimeout(() => {

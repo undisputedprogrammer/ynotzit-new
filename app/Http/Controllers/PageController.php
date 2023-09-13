@@ -69,6 +69,8 @@ class PageController extends SmartController
     }
 
     public function privacypolicy(){
+        MetatagHelper::clearAllMeta();
+        MetatagHelper::setTitle('Privacy policy - YNOTZ IT SOLUTIONS');
         return $this->buildResponse('guest.privacy-policy');
     }
 

@@ -10,7 +10,7 @@
 
     <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">Contact information.</span> We might collect your name, email, mobile number, phone number, street, city, state, pincode,  country and ip address.</p>
 
-    <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">Payment and billing information.</span> We might collect your billing name, billing address and payment method when you buy a ticket. We NEVER collect your credit card number or credit card expiry date or other details pertaining to your credit card on our website. Credit card information will be obtained and processed by our online payment partner CC Avenue.
+    <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">Payment and billing information.</span> We might collect your billing name, billing address and payment method when you buy a ticket. We NEVER collect your credit card number or credit card expiry date or other details pertaining to your credit card on our website. Credit card information will be obtained and processed by our online payment partner.
     </p>
 
     <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">Information you post.</span>
