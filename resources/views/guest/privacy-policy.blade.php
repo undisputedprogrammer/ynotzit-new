@@ -6,7 +6,7 @@
     <p class=" font-inter_medium text-sm md:text-base xl:text-lg mt-2 ">Ynotzitsolutions.com recognises the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on <a class=" underline text-blue-500" href="https://www.ynotzitsolutions.com" >https://www.ynotzitsolutions.com</a> and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy. <br>
     Ynotzitsolutions.com is a property of YNOTZ IT Solutions Private Limited, an Indian Company registered under the Companies Act, 2013 having its registered office at FS6, 6th Floor, Heavenly Plaza, Pdamugal, Kakkanad, Cochin , Kerala - 682021.</p>
 
-    <h3 class= font-inter_semibold text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Information we collect</h3>
+    <h3 class= "font-inter_semibold text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Information we collect</h3>
 
     <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">Contact information.</span> We might collect your name, email, mobile number, phone number, street, city, state, pincode,  country and ip address.</p>
 
@@ -24,7 +24,7 @@
      If you use our website, we may collect information about your IP address and the browser you're using. We might look at what site you came from, duration of time spent on our website, pages accessed or what site you visit when you leave us. We might also collect the type of mobile device you are using, or the version of the operating system your computer or device is running.
         </p>
 
-    <p class= font-inter_semibold text-sm md:text-base xl:text-lg mt-2">We collect information in different ways:</p>
+    <p class= "font-inter_semibold text-sm md:text-base xl:text-lg mt-2">We collect information in different ways:</p>
     <p class=" font-inter_regular text-sm md:text-base xl:text-lg "><span class=" font-inter_medium">We collect information directly from you.</span>
         We collect information directly from you when you register for an event or buy tickets. We also collect information if you post a comment on our websites or ask us a question through phone or email.
            </p>
@@ -39,7 +39,7 @@
 
 
 
-    <h3 class= font-inter_semibold text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Use of your personal information</h3>
+    <h3 class=" font-inter_semibold text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Use of your personal information</h3>
 
     <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">We use information to contact you:</span> We might use the information you provide to contact you for confirmation of a purchase on our website or for other promotional purposes.</p>
 
@@ -62,7 +62,7 @@
 
 
 
-        <h3 class= font-inter_semibold text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Sharing of information with third-parties</h3>
+        <h3 class= "font-inter_semibold text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Sharing of information with third-parties</h3>
 
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">We will share information with third parties who perform services on our behalf:</span>
         We share information with vendors who help us manage our online registration process or payment processors or transactional message processors. Some vendors may be located outside of India. </p>
@@ -76,20 +76,20 @@
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg mt-2"><span class=" font-inter_semibold">We may share information with any successor to all or part of our business:</span>
         For example, if part of our business is sold we may give our customer list as part of that transaction.</p>
 
-        <p class= font-inter_medium text-xs md:text-sm xl:text-base mt-2 lg:text-center">We may share your information for reasons not described in this policy. We will tell you before we do this.</p>
+        <p class= "font-inter_medium text-xs md:text-sm xl:text-base mt-2 lg:text-center">We may share your information for reasons not described in this policy. We will tell you before we do this.</p>
 
 
-        <p class= font-inter_semibold text-sm md:text-base xl:text-lg mt-2">Email Opt-Out</p>
+        <p class= "font-inter_semibold text-sm md:text-base xl:text-lg mt-2">Email Opt-Out</p>
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg ">You can opt out of receiving our marketing emails. To stop receiving our promotional emails, please email unsubscriber@ynotzitsolutions.com. It may take about ten days to process your request. Even if you opt out of getting marketing messages, we will still be sending you transactional messages through email and SMS about your purchases. </p>
 
 
-        <p class= font-inter_semibold text-sm md:text-base xl:text-lg mt-4 md:mt-6 lg:mt-8">Third party sites </p>
+        <p class= "font-inter_semibold text-sm md:text-base xl:text-lg mt-4 md:mt-6 lg:mt-8">Third party sites </p>
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg ">If you click on one of the links to third party websites, you may be taken to websites we do not control. This policy does not apply to the privacy practices of those websites. Read the privacy policy of other websites carefully. We are not responsible for these third party sites. </p>
 
 
-        <p class= font-inter_semibold text-sm md:text-base xl:text-lg mt-4 md:mt-6 lg:mt-8">Grievance Officer</p>
+        <p class= "font-inter_semibold text-sm md:text-base xl:text-lg mt-4 md:mt-6 lg:mt-8">Grievance Officer</p>
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg ">In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:</p>
-        <p class= font-inter_medium mt-2 md:text-lg lg:text-xl">Mr. Midhun P. S.</p>
+        <p class= "font-inter_medium mt-2 md:text-lg lg:text-xl">Mr. Midhun P. S.</p>
         <p class=" font-inter_regular mt-1 text-sm md:text-base xl:text-lg">FS6, 6th Floor, Heavenly Plaza, Padamugal, Kakkanad</p>
         <p class=" font-inter_regular mt-1 text-sm md:text-base xl:text-lg">Cochin, Kerala - 110020</p>
         <p class=" font-inter_regular mt-1 text-sm md:text-base xl:text-lg"><span class=" font-inter_medium">Phone:</span> +91- 9497344553</p>
@@ -98,12 +98,12 @@
 
 
 
-        <h3 class= font-inter_medium text-base md:text-lg xl:text-xl  mt-3 xl:mt-9">Updates to this policy</h3>
+        <h3 class= "font-inter_medium text-base md:text-lg xl:text-xl  mt-3 xl:mt-9">Updates to this policy</h3>
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg ">This Privacy Policy was last updated on 01.06.2023. From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
         </p>
 
 
-        <h3 class= font-inter_medium text-base md:text-lg xl:text-xl  mt-3 xl:mt-9">Jurisdiction</h3>
+        <h3 class= "font-inter_medium text-base md:text-lg xl:text-xl  mt-3 xl:mt-9">Jurisdiction</h3>
         <p class=" font-inter_regular text-sm md:text-base xl:text-lg ">If you choose to visit the website, your visit and any dispute over privacy is subject to this Policy and the website's terms of use. In addition to the foregoing, any disputes arising under this Policy shall be governed by the laws of India.
         </p>
 
