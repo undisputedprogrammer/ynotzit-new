@@ -29,7 +29,7 @@
                 <p class=" font-inter_medium text-gray-600 text-sm xl:text-base ">Padamugal, Kakkanad, Kochi-682021</p>
                 <p class="font-inter_medium text-gray-600 text-sm xl:text-base flex items-center">
                     <img class="w-5 h-5" src="{{asset('images/icons/phone.svg')}}" alt="">
-                    +91 9497344553
+                    +91 9497344553, +91 8075473813
                 </p>
             </div>
 
@@ -133,7 +133,7 @@
                 <p class=" font-inter_medium text-gray-600 text-sm ">Padamugal, Kakkanad, Kochi-682021</p>
                 <p class="font-inter_medium text-gray-600 text-sm xl:text-base flex items-center">
                     <img class="w-5 h-5" src="{{asset('images/icons/phone.svg')}}" alt="">
-                    +91 9497344553
+                    +91 9497344553, +91 8075473813
                 </p>
             </div>
 
